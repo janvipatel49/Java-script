@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Smart Countdown</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="app">
+    <h1>⏳  Countdown</h1>
+
+    <div class="input-box">
+        <input type="number" id="timeValue" placeholder="Enter number">
+        <select id="timeUnit">
+            <option value="days">Days</option>
+            <option value="hours">Hours</option>
+            <option value="minutes">Minutes</option>
+            <option value="seconds">Seconds</option>
+        </select>
+        <button onclick="startCountdown()">Start</button>
+    </div>
+
+    <div class="countdown">
+        <div class="box"><span id="d">0</span><p>Days</p></div>
+        <div class="box"><span id="h">0</span><p>Hours</p></div>
+        <div class="box"><span id="m">0</span><p>Minutes</p></div>
+        <div class="box"><span id="s">0</span><p>Seconds</p></div>
+    </div>
+
+    <div class="quote-box">
+        <p id="quote"></p>
+        <small id="author"></small>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
