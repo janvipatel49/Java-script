@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COVID-19 Tracker</title>
+    <link rel="stylesheet" href="corona.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+</head>
+
+<body>
+ <div class="app">
+    <h1>🦠 COVID-19 Tracker</h1>
+    <p class="subtitle">Search country to get live COVID data</p>
+
+    <div class="search-box">
+        <input type="text" id="countryInput" placeholder="Enter country name (e.g. India)">
+        <button onclick="getData()">Search</button>
+    </div>
+
+    <div class="result" id="result">
+        <div class="card cases">
+            <h3>Total Cases</h3>
+            <p id="cases">-</p>
+        </div>
+
+        <div class="card recovered">
+            <h3>Recovered</h3>
+            <p id="recovered">-</p>
+        </div>
+
+        <div class="card deaths">
+            <h3>Deaths</h3>
+            <p id="deaths">-</p>
+        </div>
+    </div>
+
+    <p id="error"></p>
+</div>
+
+    <script src="corona.js"></script>
+</body>
+
+</html>

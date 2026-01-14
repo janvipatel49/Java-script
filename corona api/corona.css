@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.app {
+    background: white;
+    width: 400px;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.2);
+}
+
+h1 {
+    color: #333;
+}
+
+.subtitle {
+    font-size: 14px;
+    margin: 10px 0 20px;
+    color: #666;
+}
+
+.search-box {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+.search-box input {
+    flex: 1;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+
+.search-box button {
+    padding: 10px 15px;
+    border: none;
+    background: #667eea;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.search-box button:hover {
+    background: #5563d6;
+}
+
+.result {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+}
+
+.card {
+    padding: 15px;
+    border-radius: 10px;
+    color: white;
+}
+
+.card h3 {
+    font-size: 16px;
+}
+
+.card p {
+    font-size: 22px;
+    margin-top: 8px;
+    font-weight: bold;
+}
+
+.cases {
+    background: #3498db;
+}
+
+.recovered {
+    background: #2ecc71;
+}
+
+.deaths {
+    background: #e74c3c;
+}
+
+#error {
+    color: red;
+    margin-top: 15px;
+}
