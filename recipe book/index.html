@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dark Recipe Book</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+  <h1>🌌 Dark Recipe Book</h1>
+
+  <input type="hidden" id="recipeId">
+
+  <!-- Recipe Form -->
+  <div class="form-grid">
+    <input type="text" id="title" placeholder="Recipe Title">
+    
+    <select id="cuisine">
+      <option value="">Cuisine Type</option>
+      <option>Indian</option>
+      <option>Chinese</option>
+      <option>Italian</option>
+      <option>Mexican</option>
+    </select>
+
+    <textarea id="ingredients" placeholder="Ingredients"></textarea>
+    <textarea id="instructions" placeholder="Instructions"></textarea>
+  </div>
+
+  <button class="primary-btn" onclick="addRecipe()">Save Recipe</button>
+
+  <!-- Search -->
+  <div class="search-bar">
+    <input type="text" id="search" placeholder="Search recipe...">
+    <select id="filterCuisine">
+      <option value="">All Cuisines</option>
+      <option>Indian</option>
+      <option>Chinese</option>
+      <option>Italian</option>
+      <option>Mexican</option>
+    </select>
+    <button class="primary-btn" onclick="searchRecipes()">Search</button>
+    <button class="secondary-btn" onclick="clearSearch()">Clear</button>
+  </div>
+
+  <!-- Recipe List -->
+  <div class="recipe-list" id="recipeList"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
